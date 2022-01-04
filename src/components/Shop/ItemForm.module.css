@@ -1,0 +1,46 @@
+form {
+    display: grid;
+    grid-template-areas: 'input1 input2'
+    'buttonWrapp buttonWrapp';
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+}
+
+.button-wrapper{
+    width: 100%;
+    grid-area: buttonWrapp;
+}
+
+
+
+.error-handler {
+    border: 1px solid rgba(201, 42, 42, 0.685);
+    background-color: rgba(224, 145, 131, 0.479);
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1em;
+    padding: .5em .5em;
+    font-size: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-wrapper input {
+    padding: 1em 2em;
+    outline: transparent;
+}
+
+.input-wrapper:first-child{
+    grid-area: input1;
+}
+
+
+.input-wrapper:nth-child(2){
+    grid-area: input2;
+}
